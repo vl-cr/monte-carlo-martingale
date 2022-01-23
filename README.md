@@ -13,7 +13,7 @@ So we'll try to answer the following questions:
 - Are Numba's limitations a hindrance to the code-writing process?
 - Even if it is well known that the Martingale Strategy has a negative expected value, what is the probability of winning x2 or x10 of your pot with it?
 
-The `1.monte_carlo_martingale_strategy` notebook contains everything you need to answer these questions: code, comments and final results.
+The `1.monte_carlo_martingale` notebook contains everything you need to answer these questions: code, comments and final results.
 
 ---
 
