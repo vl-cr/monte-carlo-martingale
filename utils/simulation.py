@@ -4,7 +4,7 @@ from typing import Tuple
 def simulate(simulations: int = 10, bet: float = 0.01,
              bank: int = 100, goal: int = 1000) -> Tuple[list, list, list, list, list, int]:
     """
-    Runs a Monte Carlo simulation of the Martingale strategy. Very slow because it's not optimized by Numba.
+    Runs a Monte Carlo simulation of the Martingale Strategy. Very slow because it's not optimized by Numba.
     Please note that the code in this function is very simple. This is intentional.
     The reason for that is the fact that it was written with the limitations of Numba in mind.
 
@@ -66,7 +66,7 @@ def simulate(simulations: int = 10, bet: float = 0.01,
 
             if choice == outcome:
                 current_bank += current_bet * 2
-                current_bet = bet  # In Martingale strategy, player goes back to initial bet after a win
+                current_bet = bet  # In Martingale Strategy, player goes back to initial bet after a win
 
                 if current_bank >= goal:
                     winners += 1
