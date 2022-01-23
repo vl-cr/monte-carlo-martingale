@@ -15,4 +15,6 @@ So we'll try to answer the following questions:
 
 The `1.monte_carlo_martingale_strategy` notebook contains everything you need to answer these questions: code, comments and final results.
 
+---
+
 To run the notebook: run `pip install -r requirements.txt` in a virtual environment to install the dependencies. Alternatively, you can use [Poetry](https://python-poetry.org/) for that.
