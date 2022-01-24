@@ -40,7 +40,7 @@ def simulate(simulations: int = 10, bet: float = 0.01,
     winners = 0
 
     # 37 possible outcomes in a European roulette. Here 1=red, 2=black, 0=zero.
-    outcomes = np.array([1] * 18 + [2] * 18 + [0])
+    outcomes = np.array([1]*18 + [2]*18 + [0])
     choice = 1  # Red is represented as 1
 
     for i in range(simulations):
@@ -61,7 +61,7 @@ def simulate(simulations: int = 10, bet: float = 0.01,
                 max_bet = current_bet
 
             current_bank -= current_bet  # Bet placed
-            # Spin the wheel, the outcome will be one of the following: ['red', 'black', 'zero']
+            # Spin the wheel, the outcome will be one of the following: [0, 1, 2]
             outcome = outcomes[np.random.choice(outcomes.shape[0], 1)[0]]
 
             if choice == outcome:
@@ -94,11 +94,10 @@ def simulate(simulations: int = 10, bet: float = 0.01,
 
 def check_random_outcomes(outcomes: np.ndarray, nb: int = 100) -> Tuple[int, int, int]:
     """
-    Selects a random outcome out of a numpy array a number of times. (!) Performance improved by Numba (notice the decorator).
+    Selects a random outcome out of a numpy array a number of times.
     The numpy array contains string representations of all possible outcomes of a roulette wheel.
     Counts how many times red, black and zero were chosen with np.random.choice.
     Outcomes array will contain the following integers: 1 (red), 2 (black), 0 (zero).
-    Strings ['red', 'black', 'zero'] can also be used in the array, but it is preferable to use numbers.
     
     Args:
         outcomes: numpy array that contains all outcomes. For European roulette: 18 red, 18 black, 1 zero.
