@@ -8,13 +8,20 @@ Looking for something even more efficient, I eventually found [Numba](https://nu
 
 So I decided to give Numba a try and see how it worked in practice. But instead of writing boring functions with meaningless heavy calculations, I decided to run Monte Carlo simulations on the Martingale Strategy. The strategy itself will be explained in the notebook, but you don't have to follow the whole thought process: you can skip to the comparison of execution times of normal Python vs. Numba-modified functions.
 
-So we'll try to answer the following questions:
+We'll try to answer the following questions:
 - Can Numba make the code significantly faster?
 - Are Numba's limitations a hindrance to the code-writing process?
 - Even though it is known that the Martingale Strategy has a negative expected value, what is the probability of winning x2 or x10 of your initial pot with it?
 
 [1.monte_carlo_martingale](1.monte_carlo_martingale.ipynb): this notebook contains everything you need to answer these questions: code, comments and final results.
 
----
 
-To run the notebook: run `pip install -r requirements.txt` in a virtual environment to install the dependencies. Alternatively, you can use [Poetry](https://python-poetry.org/) for that.
+## Installation
+
+To run the notebook: create a new virtual environment and activate it. Install [JupyterLab or Jupyter Notebook](https://jupyter.org/install) (recommended). Alternatively, you can use [VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks), [DataSpell](https://www.jetbrains.com/dataspell/) etc.
+
+To install the dependencies: run `pip install --user -r requirements.txt` in your virtual environment. 
+
+Alternatively, instead of the two steps above, it is recommended to use [Poetry](https://python-poetry.org/). Both "pyproject.toml" and "poetry.lock" files can be found in the root directory. 
+
+Run `poetry install` and then `poetry shell` to activate the virtual environment that Poetry created (with all the dependencies installed).
