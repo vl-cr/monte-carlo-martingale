@@ -24,4 +24,4 @@ To install the dependencies: run `pip install --user -r requirements.txt` in you
 
 Alternatively, instead of the two steps above, it is recommended to use [Poetry](https://python-poetry.org/). Both "pyproject.toml" and "poetry.lock" files can be found in the root directory. 
 
-Run `poetry install` and then `poetry shell` to activate the virtual environment that Poetry created (with all the dependencies installed).
+Run `poetry install` and then `poetry shell` to create a shell and activate the new virtual environment (with all the dependencies installed). In this shell, `jupyter notebook` command will work by default.
