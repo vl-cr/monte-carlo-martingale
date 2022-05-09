@@ -18,6 +18,8 @@ We'll try to answer the following questions:
 
 ## Installation
 
+> Tested on Python version: 3.9.10
+
 To run the notebook: create a new virtual environment and activate it. Install [JupyterLab or Jupyter Notebook](https://jupyter.org/install) (recommended). Alternatively, you can use [VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks), [DataSpell](https://www.jetbrains.com/dataspell/) etc.
 
 To install the dependencies: run `pip install --user -r requirements.txt` in your virtual environment. 
