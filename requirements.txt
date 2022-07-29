@@ -304,9 +304,9 @@ matplotlib==3.5.1; python_version >= "3.7" \
     --hash=sha256:6803299cbf4665eca14428d9e886de62e24f4223ac31ab9c5d6d5339a39782c7 \
     --hash=sha256:14334b9902ec776461c4b8c6516e26b450f7ebe0b3ef8703bf5cdfbbaecf774a \
     --hash=sha256:b2e9810e09c3a47b73ce9cab5a72243a1258f61e7900969097a817232246ce1c
-mistune==0.8.4; python_version >= "3.7" \
-    --hash=sha256:88a1051873018da288eee8538d476dffe1262495144b33ecb586c4ab266bb8d4 \
-    --hash=sha256:59a3429db53c50b5c6bcc8a07f8848cb00d7dc8bdb431a4ab41920d201d4756e
+mistune==2.0.3; python_version >= "3.7" \
+    --hash=sha256:d7605b46b6156b53b7d52a465202b29a6f00f4ea4130ad5d25e9d5547d6b7e50 \
+    --hash=sha256:e3964140c0775535fba50bd616fe180920044a64bc21850253267b07bff89924
 nbclient==0.5.11; python_full_version >= "3.7.0" and python_version >= "3.7" \
     --hash=sha256:03e857bea3012377289daa1e1c1651f4fc0295bcd109ccd36a337efcdbebaed7 \
     --hash=sha256:751516992f34b58172bad54eef1e4bf7e4f4460d58e255ca1a4e5c9649476007
